@@ -1,0 +1,25 @@
+{
+  "SUBSCRIPTION_ADDRESS": "0x2B62f328731A0Cf5E05A5eC60Af7a615DC0eB25a",
+  "PAYER_REGISTRY_ADDRESS": "0x26c305E3F7B44aF41A0601a31E978Eb92E25790f",
+  "PLAN_CATALOG_ADDRESS": "0x9e67b77f4BF90f85Be709b1e37f5cB321aFCDFEB",
+  "PRESET_TOKENS": [
+    {
+      "label": "ETH (native)",
+      "address": "0x0000000000000000000000000000000000000000",
+      "feedId": "ETH",
+      "decimals": 18
+    },
+    {
+      "label": "USDC (test)",
+      "address": "0xC1aaA447cbD7144aF565A4db3357c1cB8877A7cB",
+      "feedId": "USDC",
+      "decimals": 6
+    },
+    {
+      "label": "DAI (test)",
+      "address": "0xaFb25f37E915d1DcB63A796b081eFe9CDF0672D3",
+      "feedId": "DAI",
+      "decimals": 18
+    }
+  ]
+}

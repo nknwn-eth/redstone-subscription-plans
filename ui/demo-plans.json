@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Starter (Monthly)",
+    "usdCents": 999,
+    "period": 2592000,
+    "asset": "0x0000000000000000000000000000000000000000",
+    "feedId": "ETH",
+    "callerFeeBps": 0,
+    "maxUnitsPerCharge": 0
+  },
+  {
+    "name": "Pro (Monthly)",
+    "usdCents": 1999,
+    "period": 2592000,
+    "asset": "0x0000000000000000000000000000000000000000",
+    "feedId": "ETH",
+    "callerFeeBps": 0,
+    "maxUnitsPerCharge": 0
+  }
+]
+

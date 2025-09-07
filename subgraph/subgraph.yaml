@@ -1,0 +1,50 @@
+specVersion: 0.0.6
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: UsdSubscriptionProd
+    network: mainnet
+    source:
+      address: "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+      abi: UsdSubscriptionProd
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - SubscriptionPlan
+        - Charge
+      abis:
+        - name: UsdSubscriptionProd
+          file: ./abis/UsdSubscriptionProd.json
+      eventHandlers:
+        - event: Subscribed(indexed address,indexed address,uint256,uint256,uint256)
+          handler: handleSubscribed
+        - event: Cancelled(indexed address)
+          handler: handleCancelled
+        - event: Charged(indexed address,indexed address,uint256,uint256,uint256,uint256)
+          handler: handleCharged
+      file: ./src/mapping.ts
+  - kind: ethereum
+    name: PayerRegistry
+    network: mainnet
+    source:
+      address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+      abi: PayerRegistry
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Payer
+      abis:
+        - name: PayerRegistry
+          file: ./abis/PayerRegistry.json
+      eventHandlers:
+        - event: PayerAdded(indexed address,indexed address)
+          handler: handlePayerAdded
+      file: ./src/mapping.ts
+

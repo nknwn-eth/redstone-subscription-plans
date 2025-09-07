@@ -1,0 +1,36 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "payer", "type": "address" },
+      { "indexed": true, "internalType": "address", "name": "merchant", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "usdCents", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "priceEthUsd_8", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "paidEthWei", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "nextChargeAt", "type": "uint256" }
+    ],
+    "name": "Charged",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "payer", "type": "address" }
+    ],
+    "name": "Cancelled",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "payer", "type": "address" },
+      { "indexed": true, "internalType": "address", "name": "merchant", "type": "address" },
+      { "indexed": false, "internalType": "uint256", "name": "usdCentsPerPeriod", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "period", "type": "uint256" },
+      { "indexed": false, "internalType": "uint256", "name": "maxEthPerChargeWei", "type": "uint256" }
+    ],
+    "name": "Subscribed",
+    "type": "event"
+  }
+]
+

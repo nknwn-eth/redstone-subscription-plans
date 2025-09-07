@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "none",
+    "outDir": "ui",
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "lib": ["DOM", "ES5", "ES2015.Promise"],
+    "allowJs": false
+  },
+  "include": ["ui/app.ts"],
+  "exclude": ["node_modules"]
+}
+

@@ -1,0 +1,21 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "merchant", "type": "address" },
+      { "indexed": true, "internalType": "address", "name": "payer", "type": "address" }
+    ],
+    "name": "PayerAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "address", "name": "merchant", "type": "address" },
+      { "indexed": true, "internalType": "address", "name": "payer", "type": "address" }
+    ],
+    "name": "PayerRemoved",
+    "type": "event"
+  }
+]
+

@@ -1,0 +1,567 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/loic/Sites/redstone-hack/contracts/UsdSubscription.sol": {
+      "lastModificationDate": 1757164571209,
+      "contentHash": "c6441a9d7bcf4bb9d905829d6b4260b5",
+      "sourceName": "contracts/UsdSubscription.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@redstone-finance/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol",
+        "@redstone-finance/evm-connector/contracts/mocks/AuthorisedMockSignersBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "UsdSubscription"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/mocks/AuthorisedMockSignersBase.sol": {
+      "lastModificationDate": 1757161419591,
+      "contentHash": "5d7ee17b219addacc1e2a5ddf6194d06",
+      "sourceName": "@redstone-finance/evm-connector/contracts/mocks/AuthorisedMockSignersBase.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../core/RedstoneConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AuthorisedMockSignersBase"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol": {
+      "lastModificationDate": 1757161419613,
+      "contentHash": "beb059353410c61c07bf21e34d8a181d",
+      "sourceName": "@redstone-finance/evm-connector/contracts/core/RedstoneConsumerNumericBase.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./RedstoneConsumerBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RedstoneConsumerNumericBase"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/core/RedstoneConstants.sol": {
+      "lastModificationDate": 1757161419612,
+      "contentHash": "72b4f4d82903cb1dcda5943129893bf9",
+      "sourceName": "@redstone-finance/evm-connector/contracts/core/RedstoneConstants.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RedstoneConstants"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/core/RedstoneConsumerBase.sol": {
+      "lastModificationDate": 1757161419612,
+      "contentHash": "724d18e8070a80318d426a7506aa18d0",
+      "sourceName": "@redstone-finance/evm-connector/contracts/core/RedstoneConsumerBase.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./RedstoneConstants.sol",
+        "./RedstoneDefaultsLib.sol",
+        "./CalldataExtractor.sol",
+        "../libs/BitmapLib.sol",
+        "../libs/SignatureLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RedstoneConsumerBase"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/libs/BitmapLib.sol": {
+      "lastModificationDate": 1757161419591,
+      "contentHash": "254cdbc8ac14a44e51b81290ca50b8f7",
+      "sourceName": "@redstone-finance/evm-connector/contracts/libs/BitmapLib.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "BitmapLib"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/libs/SignatureLib.sol": {
+      "lastModificationDate": 1757161419615,
+      "contentHash": "e369c81b424ec2fd2932fddefeaeabcf",
+      "sourceName": "@redstone-finance/evm-connector/contracts/libs/SignatureLib.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "SignatureLib"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/core/RedstoneDefaultsLib.sol": {
+      "lastModificationDate": 1757161419612,
+      "contentHash": "c9d236d4db8d6faaf53c9ae452e14ca2",
+      "sourceName": "@redstone-finance/evm-connector/contracts/core/RedstoneDefaultsLib.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/NumericArrayLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RedstoneDefaultsLib"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/core/CalldataExtractor.sol": {
+      "lastModificationDate": 1757161419591,
+      "contentHash": "e7401ae098a442d80b2bac93879be07c",
+      "sourceName": "@redstone-finance/evm-connector/contracts/core/CalldataExtractor.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./RedstoneConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "CalldataExtractor"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/libs/NumericArrayLib.sol": {
+      "lastModificationDate": 1757161419611,
+      "contentHash": "a4373a31f6d2f6ab1440580e588a1ff7",
+      "sourceName": "@redstone-finance/evm-connector/contracts/libs/NumericArrayLib.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "NumericArrayLib"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/node_modules/@redstone-finance/evm-connector/contracts/data-services/PrimaryProdDataServiceConsumerBase.sol": {
+      "lastModificationDate": 1757161419612,
+      "contentHash": "002e0c3a941c76806dd394dd48339a8f",
+      "sourceName": "@redstone-finance/evm-connector/contracts/data-services/PrimaryProdDataServiceConsumerBase.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../core/RedstoneConsumerNumericBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PrimaryProdDataServiceConsumerBase"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/contracts/UsdSubscriptionProd.sol": {
+      "lastModificationDate": 1757178242501,
+      "contentHash": "2fdc31b7c0904c83b594f7baa758f3f0",
+      "sourceName": "contracts/UsdSubscriptionProd.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@redstone-finance/evm-connector/contracts/data-services/PrimaryProdDataServiceConsumerBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20Minimal",
+        "UsdSubscriptionProd"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/contracts/PayerRegistry.sol": {
+      "lastModificationDate": 1757169171181,
+      "contentHash": "a0c4767ea66a0586d19af18d25dcd913",
+      "sourceName": "contracts/PayerRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PayerRegistry"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/contracts/PlanCatalog.sol": {
+      "lastModificationDate": 1757181017023,
+      "contentHash": "97919cd497b95a82fbc2e654ae470f70",
+      "sourceName": "contracts/PlanCatalog.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PlanCatalog"
+      ]
+    },
+    "/Users/loic/Sites/redstone-hack/contracts/MockERC20.sol": {
+      "lastModificationDate": 1757208717164,
+      "contentHash": "4eac839eaae7fb7aa5ac816660f213ec",
+      "sourceName": "contracts/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    }
+  }
+}

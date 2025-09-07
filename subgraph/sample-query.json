@@ -1,0 +1,5 @@
+{
+  "query": "query($merchant: String!) { payers(where: { merchant: $merchant }) { address } }",
+  "variables": { "merchant": "0xmerchantaddresslowercase" }
+}
+

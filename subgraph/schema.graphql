@@ -1,0 +1,28 @@
+type Payer @entity {
+  id: ID!
+  merchant: Bytes!
+  address: Bytes!
+}
+
+type SubscriptionPlan @entity {
+  id: ID!
+  payer: Bytes!
+  merchant: Bytes!
+  usdCents: BigInt!
+  period: BigInt!
+  maxEthPerChargeWei: BigInt!
+  lastCharged: BigInt
+  active: Boolean!
+}
+
+type Charge @entity {
+  id: ID!
+  payer: Bytes!
+  merchant: Bytes!
+  usdCents: BigInt!
+  priceEthUsd_8: BigInt!
+  paidEthWei: BigInt!
+  nextChargeAt: BigInt!
+  timestamp: BigInt!
+  txHash: Bytes!
+}
